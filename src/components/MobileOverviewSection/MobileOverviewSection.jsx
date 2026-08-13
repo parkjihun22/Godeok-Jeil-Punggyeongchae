@@ -21,52 +21,43 @@ const items = [
     key: "overview",
     label: "사업개요",
     content: (
-      <>
-        <dl>
-          <div>
-            <dt>사업명</dt>
-            <dd>고덕 제일풍경채</dd>
-          </div>
-
-          <div>
-            <dt>대지위치</dt>
-            <dd>경기도 평택시 고덕국제화계획지구 Abc-61BL</dd>
-          </div>
-
-          <div>
-            <dt>건축규모</dt>
-            <dd>지하 2층~지상 최고 23층, 총 5개 동</dd>
-          </div>
-
-          <div>
-            <dt>세대수</dt>
-            <dd>총 456세대</dd>
-          </div>
-
-          <div>
-            <dt>세대정보</dt>
-            <dd>전용 84㎡A·84㎡B·84㎡C·101㎡</dd>
-          </div>
-
-          <div>
-            <dt>입지환경</dt>
-            <dd>평택 고덕국제신도시 생활권</dd>
-          </div>
-
-          <div>
-            <dt>직주근접</dt>
-            <dd>삼성전자 평택캠퍼스 인접 생활권</dd>
-          </div>
-
-          <div>
-            <dt>시공사</dt>
-            <dd>제일건설㈜</dd>
-          </div>
-        </dl>
-      </>
+      <ul className={styles.detailList}>
+        <li>
+          <strong>사업명</strong>
+          <span>고덕 제일풍경채</span>
+        </li>
+        <li>
+          <strong>대지위치</strong>
+          <span>경기도 평택시 고덕국제화계획지구 Abc-61BL</span>
+        </li>
+        <li>
+          <strong>건축규모</strong>
+          <span>지하 2층~지상 최고 23층, 총 5개 동</span>
+        </li>
+        <li>
+          <strong>세대수</strong>
+          <span>총 456세대</span>
+        </li>
+        <li>
+          <strong>세대정보</strong>
+          <span>전용 84㎡A · 84㎡B · 84㎡C · 101㎡</span>
+        </li>
+        <li>
+          <strong>입지환경</strong>
+          <span>평택 고덕국제신도시 생활권</span>
+        </li>
+        <li>
+          <strong>직주근접</strong>
+          <span>삼성전자 평택캠퍼스 인접 생활권</span>
+        </li>
+        <li>
+          <strong>시공사</strong>
+          <span>제일건설㈜</span>
+        </li>
+      </ul>
     ),
   },
-  
+
   {
     key: "location",
     label: "입지환경",
@@ -94,7 +85,8 @@ const items = [
         <div className={styles.premiumIntro}>
           <h3 className={styles.premiumTitle}>GREAT PREMIUM</h3>
           <p className={styles.premiumSubtitle}>
-            고덕국제신도시 생활 인프라와 미래가치를 누리는<br />
+            고덕국제신도시 생활 인프라와 미래가치를 누리는
+            <br />
             고덕 제일풍경채 프리미엄 라이프
           </p>
         </div>
@@ -109,42 +101,41 @@ function PremiumSlider() {
   const slides = [
     {
       img: slide1,
-      title: "평택 고덕국제신도시 생활권",
+      title: "평택 고덕국제신도시 중심 입지",
       desc:
-        "고덕국제신도시의 생활·교육·교통 인프라를 가까이 누릴 수 있는 주거환경. Abc-61BL에 조성되는 고덕 제일풍경채.",
+        "고덕국제신도시 핵심 생활권 입지<br/>생활·교육·교통 인프라를 가까이 누리는 주거환경<br/>Abc-61BL 고덕 제일풍경채",
     },
     {
       img: slide2,
-      title: "전용 84㎡ · 101㎡ 평면 구성",
+      title: "전용 84㎡ · 101㎡ 평면",
       desc:
-        "전용 84㎡A·84㎡B·84㎡C·101㎡로 구성되며, 가족 구성과 생활 방식에 따라 적합한 평면을 선택할 수 있습니다.",
+        "실수요 선호도가 높은 전용 84㎡·101㎡ 구성<br/>공간 활용과 생활 동선을 고려한 특화 설계<br/>가족 중심 라이프스타일을 담은 주거 공간",
     },
     {
       img: slide3,
       title: "삼성전자 평택캠퍼스 직주근접",
       desc:
-        "삼성전자 평택캠퍼스와 가까운 직주근접 입지. 평택의 주요 도로망을 이용할 수 있어 출퇴근과 생활이 편리합니다.",
+        "삼성전자 평택캠퍼스와 가까운 직주근접 입지<br/>평택 주요 도로망과 광역 교통망 이용 편리<br/>출퇴근과 생활 편의성을 모두 갖춘 주거 환경",
     },
     {
       img: slide4,
-      title: "생활·교육 인프라를 가까이",
+      title: "생활·교육 인프라를 모두 누리다",
       desc:
-        "고덕국제신도시의 교육시설과 상업시설, 공원 및 생활 편의시설을 가까이 이용할 수 있는 쾌적한 주거환경입니다.",
+        "고덕국제신도시 생활권을 가까이 누리는 입지<br/>교육시설과 상업시설, 공원까지 편리한 생활환경<br/>쾌적한 신도시 라이프를 완성하는 주거단지",
     },
     {
       img: slide5,
-      title: "제일건설의 주거 철학을 담은 단지",
+      title: "제일건설의 주거 철학",
       desc:
-        "지하 2층~지상 최고 23층, 총 5개 동으로 조성되며, 입주민의 일상과 편의를 고려한 단지 설계가 적용됩니다.",
+        "차별화된 단지 설계와 다양한 커뮤니티 시설<br/>입주민 중심의 편리한 주거 환경 제공<br/>제일건설이 시공하는 고덕 제일풍경채",
     },
     {
       img: slide6,
       title: "미래가치가 기대되는 주거 선택",
       desc:
-        "고덕국제신도시의 지속적인 개발과 삼성전자 평택캠퍼스 배후 주거 수요를 함께 기대할 수 있는 고덕 제일풍경채.",
+        "고덕국제신도시 개발과 함께 성장하는 미래가치<br/>삼성전자 평택캠퍼스 배후 주거단지 프리미엄<br/>실거주와 미래가치를 함께 갖춘 고덕 제일풍경채",
     },
   ];
-  
 
   const [current, setCurrent] = useState(0);
   const [touchStartX, setTouchStartX] = useState(null);
@@ -184,10 +175,14 @@ function PremiumSlider() {
         <img src={slides[current].img} alt="" />
         <div className={styles.caption}>
           <h4
-            dangerouslySetInnerHTML={{ __html: slides[current].title.replace(/\n/g, "<br/>") }}
+            dangerouslySetInnerHTML={{
+              __html: slides[current].title.replace(/\n/g, "<br/>"),
+            }}
           />
           <p
-            dangerouslySetInnerHTML={{ __html: slides[current].desc }}
+            dangerouslySetInnerHTML={{
+              __html: slides[current].desc,
+            }}
           />
         </div>
       </div>
@@ -218,7 +213,9 @@ export default function MobileOverviewSection() {
 
         const fixedHeaderOffset = 96;
         const targetTop =
-          window.scrollY + targetItem.getBoundingClientRect().top - fixedHeaderOffset;
+          window.scrollY +
+          targetItem.getBoundingClientRect().top -
+          fixedHeaderOffset;
 
         window.scrollTo({
           top: Math.max(targetTop, 0),
@@ -237,7 +234,11 @@ export default function MobileOverviewSection() {
         <h2 className={styles.mainTitle}>사업안내</h2>
       </header>
 
-      <img src={heroImage} className={styles.heroImage} alt="고덕 제일풍경채 히어로 메인사진" />
+      <img
+        src={heroImage}
+        className={styles.heroImage}
+        alt="고덕 제일풍경채 히어로 메인사진"
+      />
 
       {/* ─── 아코디언 항목 ─── */}
       {items.map(({ key, label, content }) => (
@@ -250,14 +251,22 @@ export default function MobileOverviewSection() {
         >
           <button
             type="button"
-            className={`${styles.accordionHeader} ${openKey === key ? styles.active : ""}`}
+            className={`${styles.accordionHeader} ${
+              openKey === key ? styles.active : ""
+            }`}
             onClick={() => toggle(key)}
             aria-expanded={openKey === key}
           >
             <span className={styles.label}>{label}</span>
-            <span className={`${styles.arrow} ${openKey === key ? styles.up : styles.down}`} />
+            <span
+              className={`${styles.arrow} ${
+                openKey === key ? styles.up : styles.down
+              }`}
+            />
           </button>
-          {openKey === key && <div className={styles.accordionContent}>{content}</div>}
+          {openKey === key && (
+            <div className={styles.accordionContent}>{content}</div>
+          )}
         </div>
       ))}
     </section>
