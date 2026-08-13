@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://gd-jeilpunggyeongchae.co.kr/sitemap.xml
