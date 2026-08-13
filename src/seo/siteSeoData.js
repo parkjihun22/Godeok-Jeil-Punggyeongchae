@@ -137,7 +137,7 @@ const page = ({
 export const seoPages = {
   home: page({
     path: "/",
-    title: "▪고덕 제일풍경채",
+    title: "고덕 제일풍경채",
     description: siteSeo.defaultDescription,
     menu: "홈",
     priority: 1,
