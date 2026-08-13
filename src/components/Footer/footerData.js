@@ -7,7 +7,7 @@ const footerData = {
     "단지 주요 개발계획, 인허가, 분양 일정, 상품 구성은 관계 기관 및 사업 주체의 사정에 따라 변경 또는 취소될 수 있습니다.",
   company: {
     label: "시공사",
-    name: "수자인,풍경채",
+    name: "제일건설",
   },
   familySites: [
     {
